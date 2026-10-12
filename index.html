@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- Google Material Symbol Outline -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app-container">
@@ -107,7 +108,98 @@
                         <label><input type="checkbox" checked>Glassdoor</label>
                     </div>
             </aside>
+
+            <!-- MAIN JOB FEED GRID (75% width) -->
+             <main class="job-feed">
+                <div class="feed-header">
+                    <p>Showing <strong>1,240</strong> results</p>
+                    <div class="sort-by">
+                        <label>Sort by:</label>
+                        <select>
+                            <option>Most Recent</option>
+                            <option>Highest Paid</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- JOB CARDS CONTAINER -->
+                 <div class="job-grid">
+
+                    <!-- Card 1 -->
+                     <div class="job-card">
+                        <div class="card-header">
+                            <div class="company-info">
+                                <div class="company-logo">G</div>
+                                <div>
+                                    <h3>Frontend Developer</h3>
+                                    <p class="company-name">Google</p>
+                                </div>
+                            </div>
+                            <button class="bookmark-btn">☆</button>
+                        </div>
+                        <div class="card-tags">
+                            <span class="badge">Remote</span>
+                            <span class="badge">₹18-24 LPA</span>
+                            <span class="source-badge linkedin">via LinkedIn</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="posted-time">3 days ago</span>
+                            <button class="btn-apply">Apply Now</button>
+                        </div>
+                     </div>
+
+                     <!-- Card 2 -->
+                      <div class="job-card">
+                        <div class="card-header">
+                            <div class="company-info">
+                                <div class="company-logo ms">M</div>
+                                <div>
+                                    <h3>SWE Intern</h3>
+                                    <p class="company-name">Microsoft</p>
+                                </div>
+                            </div>
+                            <button class="bookmark-btn">☆</button>
+                        </div>
+                        <div class="card-tags">
+                            <span class="badge">Remote</span>
+                            <span class="badge">₹50k/month</span>
+                            <span class="source-badge indeed">via Indeed</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="posted-time">1 day ago</span>
+                            <button class="btn-apply">Apply Now</button>
+                        </div>
+                     </div>
+
+                     <!-- Card 3 -->
+                      <div class="job-card">
+                        <div class="card-header">
+                            <div class="company-info">
+                                <div class="company-logo adb">A</div>
+                                <div>
+                                    <h3>UI/UX Designer</h3>
+                                    <p class="company-name">Adobe</p>
+                                </div>
+                            </div>
+                            <button class="bookmark-btn">☆</button>
+                        </div>
+                        <div class="card-tags">
+                            <span class="badge">On-site</span>
+                            <span class="badge">₹12-16 LPA</span>
+                            <span class="source-badge unstop">via Unstop</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="posted-time">Just Now</span>
+                            <button class="btn-apply">Apply Now</button>
+                        </div>
+                     </div>
+
+                 </div>
+
+             </main>
+
            </div>
+
     </div>
     
 </body>
