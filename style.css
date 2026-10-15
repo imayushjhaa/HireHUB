@@ -302,3 +302,155 @@ body{
     color: var(--text-muted);
 }
 
+/* Internship/ job feed area (75% width) */
+.job-feed {
+    flex: 1;
+}
+
+.feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-by select {
+    background-color: var(--bg-surface);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    outline: none;
+    cursor: pointer;
+}
+
+/* Job cards grid */
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-blue);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-surface-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.company-logo.ms {
+    color: #00a4ef;
+}
+
+.company-logo.adb{
+    color: #ff0000;
+} 
+
+.company-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.company-name {
+    color: var(--text-muted);
+    font-size: 13px;
+}
+
+.bookmark-btn {
+    background-color: transparent;
+    color: var(--text-muted);
+    font-size: 20px;
+}
+
+.bookmark-btn:hover {
+    color: #f59e0b;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge {
+    background-color: var(--bg-primary);
+    color: var(--text-muted);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.source-badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.source-badge.linkedin {
+    background-color: rgba(10, 102, 194, 0.2);
+    color: #60a5fa;
+}
+
+.source-badge.indeed {
+    background-color: rgba(33, 100, 293, 0.2);
+    color: #93c5fd;
+}
+
+.source-badge.unstop {
+    background-color: rgba(255, 107, 0, 0.2);
+    color: #fdba74;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.poster-time {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.btn-apply {
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.btn-apply:hover {
+    background-color: var(--accent-blue-hover);
+}
